@@ -1,21 +1,22 @@
-# devbox-aider-vscode-template
+# devbox-vscode-template
 
-Template for new vscode projects that uses [devbox](https://www.jetify.com/docs/devbox/) for nix-based dependency management.
+[devbox](https://www.jetify.com/docs/devbox/) and [direnv](https://direnv.net/), wired into VS Code
 
-## One-time setup
+## Prerequisites
 
-Install the following if not already on your machine:
+```sh
+curl -fsSL https://get.jetify.com/devbox | bash
+brew install direnv
+```
 
-* [devbox](https://www.jetify.com/docs/devbox/)
-* [direnv](https://direnv.net/)
-* vscode extensions from `.vscode/extensions.json`
+## Quickstart
 
-# Usage
+```sh
+REPO=<your-repo>
+gh repo create "$REPO" --template jcosentino11/devbox-vscode-template --private --clone
+cd "$REPO"
+direnv allow
+code .
+```
 
-1) Open your project in vscode
-2) `direnv allow` to load devbox's env into your shell, tasks, and the extension host
-
-## Helpful Docs
-
-* https://www.jetify.com/docs/devbox/quickstart/
-* https://www.jetify.com/docs/devbox/ide_configuration/direnv/
+Then reload the window.
