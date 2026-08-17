@@ -9,7 +9,7 @@ curl -fsSL https://get.jetify.com/devbox | bash
 brew install direnv
 ```
 
-## Quickstart
+## Repo Setup
 
 ```sh
 REPO=<your-repo>
@@ -19,4 +19,12 @@ direnv allow
 code .
 ```
 
-Then reload the window.
+> Reload the window afterward.
+
+## Usage
+
+Opening the project loads devbox's isolated env automatically.
+
+```sh
+code .
+```
