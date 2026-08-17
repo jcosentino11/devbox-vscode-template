@@ -1,4 +1,4 @@
-# devbox-project-vscode-template
+# devbox-aider-vscode-template
 
 Template for new vscode projects that uses [devbox](https://www.jetify.com/docs/devbox/) for nix-based dependency management.
 
